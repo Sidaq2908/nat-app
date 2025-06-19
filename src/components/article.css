@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#quote {
+  font-weight: bold;
+  color: rgb(83, 162, 3);
+}
+
+.column {
+  background-color: rgb(248, 248, 226);
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.column2 {
+  
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.aboutimg img{
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.about {
+  flex: 1;
+  min-width: 280px;
+  padding: 1rem;
+}
+
+.heading {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading:first-child{
+    color: rgb(83, 162, 3);
+    font-family: "Ancizar Sans", sans-serif;
+
+}
+
+.content p{
+    color: rgb(116, 53, 24);
+    font-family: "Ancizar Sans", sans-serif;
+}
+/* For tablets and phones */
+@media (max-width: 768px) {
+  .column2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutimg img {
+    width: 85%;
+    height: auto;
+  }
+
+  .about {
+    width: 90%;
+    height: auto;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens (like phones) */
+@media (max-width: 480px) {
+  .content {
+    font-size: 0.8rem;
+  }
+
+  .aboutimg img {
+    width: 100%;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
+
+.menu-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4%;
+}
+
+.icn,.co,.workshop{
+  width: 30%;
+  min-width: 280px;
+  height: auto;
+  background-color: rgb(248, 248, 226);
+  border: 1px solid rgb(248, 248, 226);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(135, 125, 63);
+  padding: 3%;
+  text-align: justify;
+  max-width: 32%;
+}
+.icon-container{
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(83, 162, 3);
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+   font-size: 2rem; 
+  color: rgb(83, 162, 3);
+}
+.box-heading{
+    text-align: center;
+    color: rgb(83, 162, 3);
+    font-family: "Ancizar Sans", sans-serif;
+
+} 
+.icn,.co,.workshop p{
+  color: rgb(116, 53, 24);
+   font-family: "Ancizar Sans", sans-serif;
+}
+.workshop h6{
+  color: rgb(116, 53, 24);
+   font-family: "Ancizar Sans", sans-serif;
+}
+
+@media (max-width:1024){
+  .icn,.co,.workshop{
+    max-width: 50%;
+    flex: 1 1 50%; 
+  }
+  .form{
+    max-width: 45%;
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 768px) {
+  .icn,.workshop,.co{
+    max-width: 90%;
+    font-size: 0.95rem;
+    flex: 1 1 100%;
+  }
+  .form{
+    max-width: 90%;
+    font-size: 0.95rem;
+    flex: 1 1 100%;
+  }
+}
+
+/* For very small screens (like phones) */
+@media (max-width: 480px) {
+  .icn,.workshop,.co{
+    max-width: 100%;
+    font-size: 0.85rem;
+  }
+  .form{
+    max-width: 100%;
+    font-size: 0.85rem;
+  }
+}
+.forms{
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+}
+.form{
+  border: 1px solid rgb(248, 248, 226);
+  width: 30%;
+  height: auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(248, 248, 226);
+  box-shadow: 4px 4px 4px  rgb(135, 125, 63);
+  font-family: "Ancizar Sans", sans-serif;
+  color: rgb(116, 53, 24);
+}
+.heading-container{
+  text-align: center;
+  color: rgb(83, 162, 3);
+}
+
+.button{
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgb(116, 53, 24);
+  padding: 2% 4%;
+  border-radius: 10px;
+  color: rgb(116, 53, 24);
+
+}
+.objective-box{
+   background-color: rgb(248, 248, 226);
+   width: 100%;
+   padding: 2%;
+   font-family: "Ancizar Sans","sans-serif";
+   color: rgb(116, 53, 24) ;
+
+}
+.title{
+  color: rgb(83, 162, 3);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.heading-1{
+  color: rgb(83, 162, 3);
+  font-weight: 600;
+  
+}
+.list-group-item a{
+  text-decoration: none;
+  color: black;
+}
+.title-1{
+  color: rgb(83, 162, 3);
+  text-align: center;
+  padding-top: 10px;
+}

@@ -1,0 +1,16 @@
+.font-small {
+  font-size: 13px;
+}
+
+.font-normal {
+  font-size: 16px;
+}
+
+.font-large {
+  font-size: 19px;
+}
+
+/* Ensure all text inherits from body */
+body, p, span, div,a,h5,h6,li, td, th, button, input, label {
+  font-size: inherit;
+}

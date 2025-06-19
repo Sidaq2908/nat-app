@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.anchor{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 2px;
+}
+#navbar{
+    padding: 10px;
+    height: auto;
+}
+.logo1{
+  display: none;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+#navbar ul li{
+    list-style: none;
+    flex: 1 1 30%; /* Allow responsive resizing */
+    text-align: center;
+}
+#navbar img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#img1{
+    max-height: 50px;
+}
+#img2{
+    max-height: 80px;
+}
+#img3{
+    max-height: 60px;
+}
+@media screen and (max-width:1000px){
+  .logo1{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #navbar ul li {
+    flex: 1 1 100%;
+  }
+
+  #navbar img {
+    max-width: 80%; /* Scale down on smaller screens */
+  }
+  .logo1{
+    display: inline-block;
+  }
+}
+.nav2 .navbar-nav .nav-item {
+    margin: 0 4px; /* tighter spacing */
+}
+
+.nav2 .nav-link {
+    padding: 0.25rem 0.3rem;
+    font-size: 0.9rem;
+}
+
+.nav2 .nav-link svg {
+    margin-bottom: 2px;
+}
+
+.nav2{
+    background-color: #fefefe !important;
+}
+.navbar-nav{
+    padding-left: 20px;
+}
+.nav-item:hover{
+    font-weight: 500;
+    color: rgb(104, 101, 101);
+}
+ .dropdown-menu {
+  background-color: white !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: black;
+  background-color: #fff;
+
+ &:hover {
+    background-color: #d2d4d5;
+    color: black;
+  }
+}
+.btn-lang{
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 2px;
+    padding: 2%;
+    font-size: 17px;
+    color: black;
+}
